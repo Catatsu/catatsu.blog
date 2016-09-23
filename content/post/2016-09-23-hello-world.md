@@ -8,4 +8,4 @@ categories = ["information"]
 
 +++
 
-投稿テスト
+投稿テスト！
