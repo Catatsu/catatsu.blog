@@ -8,7 +8,7 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
+    - lukevivier/gh-pages:
         token: $GIT_TOKEN
         basedir: public
         repo: Catatsu/catatsu.github.io
