@@ -12,20 +12,12 @@ copyright = "Code released under the Apache 2.0 license."
 
 [params]
   DateForm = "Mon, Jan 2, 2006"
-  Description = "Your site description"
-  Author = "Benoît Benedetti"
-  email = "benoit.benedetti@gmail.com"
+  Description = "CatatsuはHASIGOです"
   Ganalytics = "XX-00000000-0"
 
 [[params.social]]
-  title = "twitter"
-  url = "https://twitter.com/humboldtux"
-[[params.social]]
   title = "github"
-  url = "https://github.com/humboldtux"
-[[params.social]]
-  title = "facebook"
-  url = "https://www.facebook.com/FACEBOOKHANDLE"
+  url = "https://github.com/Catatsu"
 
 [[menu.main]]
   name = "home"
