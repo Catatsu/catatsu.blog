@@ -1,9 +1,9 @@
-baseurl = "http://replace-this-with-your-domain.com/"
+baseurl = "http://catatsu.github.io"
 languageCode = "en-us"
-title = "Type theme"
+title = "Catatsu Tech Blog"
 theme = "hugo-type-theme"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "spf13"
+disqusShortname = "catatsu"
 # Add your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Posts per page
