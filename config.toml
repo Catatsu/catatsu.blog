@@ -1,5 +1,5 @@
 HasCJKLanguage = true
-baseurl = "https://catatsu.github.io/"
+baseurl = "https://catatsu.github.io"
 title = "Catatsu Tech Blog"
 canonifyurls = true
 paginate = 10
