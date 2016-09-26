@@ -7,8 +7,8 @@ build:
 deploy:
   steps:
     - install-packages:
-        packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
+        packages: python-pip
+    - jkawamoto/ghp-import:
         token: $GIT_TOKEN
         basedir: public
         repo: Catatsu/catatsu.github.io
