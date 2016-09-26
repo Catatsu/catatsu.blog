@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build@1.8.1:
       flags: --buildDrafts=false
-      theme: hugo-type-theme
+      # theme: hugo-type-theme
 deploy:
   steps:
     - install-packages:
@@ -12,3 +12,4 @@ deploy:
         token: $GIT_TOKEN
         basedir: public
         repo: Catatsu/catatsu.github.io
+        branch: master
