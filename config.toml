@@ -1,4 +1,4 @@
-baseurl = "http://catatsu.github.io"
+baseurl = "http://catatsu.github.io/"
 languageCode = "en-us"
 title = "Catatsu Tech Blog"
 theme = "type"
