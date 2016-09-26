@@ -62,6 +62,8 @@ deploy:
         branch: master
 ```
 
+参考：[Hugo, github pages, werckerで自動デプロイ 2016/05/12版](https://blog.nabetama.com/post/2016-05-12-30/)
+
 ## おわりに
 GithubPages × Hugo × Werckerでサクッとブログを立ち上げられるってのは非常に便利ですね。日本中全ての会社でサクッとツルッとブログを立ち上げるといいですよ。
 
