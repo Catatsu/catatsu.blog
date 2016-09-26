@@ -1,9 +1,10 @@
 box: debian
 build:
   steps:
-    - arjen/hugo-build@1.8.1:
-      flags: --buildDrafts=false
-      theme: type
+    - arjen/hugo-build:
+        flags: --buildDrafts=false
+        version: "HEAD"
+        theme: type
 deploy:
   steps:
     - install-packages:
