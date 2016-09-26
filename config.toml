@@ -1,63 +1,40 @@
-baseurl = "http://catatsu.github.io/"
-languageCode = "en-us"
-title = "Catatsu Tech Blog"
-theme = "type"
-
-# Enable comments by entering your Disqus shortname
-disqusShortname = "catatsu"
-
-# Add your tracking code to enable Google Analytics
-googleAnalytics = ""
-
-# Posts per page
-paginate = 10
 HasCJKLanguage = true
+baseurl = "https://catatsu.github.io/"
+title = "Catatsu Tech Blog"
+canonifyurls = true
+paginate = 10
+theme = "startbootstrap-clean-blog"
+languageCode = "en-us"
+copyright = "Code released under the Apache 2.0 license."
+
+[author]
+  name = "Benoît Benedetti"
 
 [params]
-	author = "Your name"
-	description = "Add a description of your website"
+  DateForm = "Mon, Jan 2, 2006"
+  Description = "Your site description"
+  Author = "Benoît Benedetti"
+  email = "benoit.benedetti@gmail.com"
+  Ganalytics = "XX-00000000-0"
 
-	# The keywords will be added as a meta tag. Delimit them with a comma.
-	keywords = ""
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/humboldtux"
+[[params.social]]
+  title = "github"
+  url = "https://github.com/humboldtux"
+[[params.social]]
+  title = "facebook"
+  url = "https://www.facebook.com/FACEBOOKHANDLE"
 
-	# Either show custom avatar on the top
-	# left by adding the filename in below
-	avatar = "img/avatar.png"
-
-	# or use Gravatar by adding your email address to generate a unique avatar
-	gravatar = "your@email.com"
-
-	headerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Remove all header text in **config.toml** to disable this feature."
-
-	# To add a header background to the main site, save your image under static/img/.
-	# If now image path is provided, a orange background will be shown instead.
-	headerImage = ""
-	copyright = "Released under the MIT license<br>Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)"
-
-
-	[params.social]
-		# Insert your accout name and the icon will be shown in the right menu
-		rss = true
-		homepage = true
-		email = ""
-		behance = ""
-		bitbucket  =""
-		dribbble = ""
-		facebook = ""
-		flickr = ""
-		github = "Catatsu"
-		googleplus = ""
-		instagram = ""
-		linkedin = ""
-		pinterest = ""
-		reddit = ""
-		soundcloud = ""
-		stackexchange = ""
-		steam = ""
-		tumblr = ""
-		twitter = ""
-		wordpress = ""
-		youtube = ""
+[[menu.main]]
+  name = "home"
+  url = "/"
+  weight = -200
+[[menu.main]]
+  name = "Archives"
+  url = "/post/"
+  weight = -180
 
 [permalinks]
     post = "/:year/:month/:day/:slug"

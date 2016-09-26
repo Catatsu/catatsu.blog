@@ -3,7 +3,7 @@ build:
   steps:
     - arjen/hugo-build@1.12.0:
       flags: --buildDrafts=false
-      theme: type
+      theme: startbootstrap-clean-blog
 deploy:
   steps:
     - install-packages:
