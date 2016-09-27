@@ -1,18 +1,18 @@
 +++
 categories = ["React-Native"]
 date = "2016-09-27T23:35:00+09:00"
-description = "ReactNativeの開発環境構築~HelloWorld"
+description = "環境構築〜そしてHelloWorld"
 draft = false
 slug = "react-native-tutorial"
 image = "/img/about-bg.jpg"
 author = "matumotto"
 tags = ["ReactNative", "development"]
-title = "ReactNativeの開発環境構築~HelloWorld"
+title = "ReactNativeの開発環境構築"
 
 +++
 
 どうも僕([@matumotto](https://github.com/matumotto))です。
-ReactNativeを久しぶりに覗いたらバージョンがめっちゃがってたので、1からやりなおしていきます。
+ReactNativeを久しぶりに覗いたらバージョンがめっちゃあがってたので、1からやりなおしていきます。
 
 ※OS X環境想定
 
@@ -25,7 +25,7 @@ ReactNativeを久しぶりに覗いたらバージョンがめっちゃがって
 ### 環境準備
  - まずnode.jsとwatchmanをインストール
 
-```
+```bash
 brew install node
 brew install watchman
 ```
@@ -34,7 +34,7 @@ brew install watchman
 
 - npmでReactNativeのコマンドツールをインストール
 
-```
+```bash
 npm install -g react-native-cli
 ```
 
@@ -44,13 +44,13 @@ npm install -g react-native-cli
 ### プロジェクト作成〜ビルド
 - まずはプロジェクトを作成する 
 
-```
+```bash
 react-native init TestProject
 ```
 
  - 移動
 
- ```
+ ```bash
  cd TestProject
  ```
 
@@ -71,7 +71,7 @@ react-native init TestProject
  
  - 文言を変更する
 
- ```
+ ```bash
  sed -i '' 's/Welcome to React Native!/Hello React!/g' index.android.js
  ``` 
 
