@@ -15,6 +15,9 @@ title = "ReactNativeの開発環境構築"
 ReactNativeを久しぶりに覗いたらバージョンがめっちゃあがってたので、1からやりなおしていきます。
 
 ※OS X環境想定
+node: v4.2.2
+react: 15.3.2,
+react-native": 0.34.0
 
  ----
 
@@ -75,9 +78,10 @@ react-native init TestProject
  sed -i '' 's/Welcome to React Native!/Hello React!/g' index.android.js
  ``` 
 
- - アプリに反映
- アプリのメニューからReloadを選択するとテキストが更新されます。
- Hello React! やったね！
+#### アプリに反映
+アプリのメニューからReloadを選択するとテキストが更新されます。
+Hello React! やったね！
+※ iOSの場合は ``run-ios`` になります。
 
 
  おしまい。
