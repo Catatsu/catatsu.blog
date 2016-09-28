@@ -14,10 +14,10 @@ title = "ReactNativeの開発環境構築"
 どうも僕([@matumotto](https://github.com/matumotto))です。
 ReactNativeを久しぶりに覗いたらバージョンがめっちゃあがってたので、1からやりなおしていきます。
 
-※OS X環境想定
-node: v4.2.2
-react: 15.3.2,
-react-native": 0.34.0
+※OS X環境想定<br />
+node: 4.2.2, 
+react: 15.3.2, 
+react-native: 0.34.0
 
  ----
 
@@ -65,6 +65,7 @@ react-native init TestProject
  adb reverse tcp:8081 tcp:8081
  react-native run-android
  ```
+ ※ iOSの場合は ``run-ios`` になります。
 
  ----
 
@@ -83,8 +84,7 @@ react-native init TestProject
 
 ### 変更をアプリに反映
 アプリのメニューからReloadを選択するとテキストが更新されます。<br>
-Hello React! やったね！<br>
-※ iOSの場合は ``run-ios`` になります。
+Hello React! やったね！
 
 
  おしまい。
