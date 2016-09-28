@@ -2,7 +2,7 @@
 set -u
 
 usage() {
-  echo "Usage : $0 [-w] [title_name]" 1>&2
+  echo "Usage : $0 [-w] [title_name] [author_name]" 1>&2
 }
 
 main () {
@@ -22,15 +22,17 @@ main () {
   done
 
   shift $(expr $OPTIND - 1)
-  [ $# -ne 1 ] && usage && exit 1
+  [ $# -ne 2 ] && usage && exit 1
 
   slug="$1"
+  author="$2"
   file_name="post/$(date +"%Y-%m-%d")-${slug}.md"
   file_path="content/$file_name"
   if [ ! -e "$file_path" ]; then
     hugo new "$file_name"
     sed -i '' -e 's/title = \".*\"/title = \"\"/g' "$file_path"
     sed -i '' -e "s/slug = \".*\"/slug = \"$slug\"/g" "$file_path"
+    sed -i '' -e "s/author = \".*\"/author = \"$author\"/g" "$file_path"
   else
     echo "$file_name already exists."
   fi

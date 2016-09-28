@@ -17,10 +17,10 @@ $ git@github.com:Catatsu/catatsu.blog.git
 Congratulations!! 
 
 ## usage
-first, create markdown file and edit.
+first, create markdown file and edit. (type title_name, author_name)
 
 ```bash
-$ sh create.sh foo-bar
+$ sh create.sh foo-bar nabeen
 ```
 
 And push it to master branch, done.
