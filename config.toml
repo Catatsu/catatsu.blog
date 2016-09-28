@@ -13,7 +13,7 @@ copyright = "Code released under the Apache 2.0 license."
 [params]
   DateForm = "Mon, Jan 2, 2006"
   Description = "CatatsuはHASIGOです"
-  Ganalytics = "XX-00000000-0"
+  Ganalytics = "UA-84874723-1"
 
 [[params.social]]
   title = "github"
