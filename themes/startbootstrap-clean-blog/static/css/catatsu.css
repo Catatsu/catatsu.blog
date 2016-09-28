@@ -2,6 +2,7 @@
 
 body{
 	font-family: 'Quicksand', sans-serif;
+	word-break: break-all;
 }
 
 .post-preview>.post-meta {
@@ -17,7 +18,8 @@ body{
 	background-color: blue;   /* 背景色 */
 	padding: 5px;
 	color: white;
-	margin-right: 5px
+	margin-right: 5px;
+	line-height: 2.0em
 }
 
 .post-preview>.post-meta>.tags {
@@ -27,7 +29,8 @@ body{
 	background-color: green;   /* 背景色 */
 	padding: 5px;
 	color: white;
-	margin-right: 5px
+	margin-right: 5px;
+	line-height: 2.0em
 }
 
 .__inner_post h2{
