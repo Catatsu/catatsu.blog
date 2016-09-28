@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.post-preview>.post-meta {
+	margin-bottom: 0px;
+	font-style: normal;
+	padding: 5px
+}
+
+.post-preview>.post-meta>.categories {
+	-moz-border-radius: 20px;    /* 古いFirefox */
+	-webkit-border-radius: 20px; /* 古いSafari,Chrome */
+	border-radius: 5px;         /* CSS3 */
+	background-color: blue;   /* 背景色 */
+	padding: 5px;
+	color: white;
+	margin-right: 5px
+}
+
+.post-preview>.post-meta>.tags {
+	-moz-border-radius: 20px;    /* 古いFirefox */
+	-webkit-border-radius: 20px; /* 古いSafari,Chrome */
+	border-radius: 5px;         /* CSS3 */
+	background-color: green;   /* 背景色 */
+	padding: 5px;
+	color: white;
+	margin-right: 5px
+}
+
+.__inner_post h2{
+    color: #000000;
+    background: #f3f3f3;
+    border-radius: 5px; 
+    padding: 20px 20px;
+    font-weight: normal
+}
+
+.__inner_post h3{
+    color: #3f3f3f; 
+    padding: 10px 0px; 
+    border-bottom: 3px solid #666;
+}
+
+.__inner_post h4{
+    color: #3f3f3f;
+    padding: 10px 0px; 
+    border-bottom: 3px dotted #666;
+}

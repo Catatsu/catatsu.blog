@@ -1,31 +1,37 @@
 {{ partial "header.html" .}}
 
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('{{ .Site.BaseURL }}/img/home-bg.jpg')">
-      <div class="container">
-        <div class="row">
-           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-             <div class="post-heading">
-               <h1>{{ .Title }}</h1>
-               <h2 class="subheading">{{ .Description }}</h2>
-               <span class="meta">Posted by <a href="#">{{ .Params.author }}</a> on {{ dateFormat .Site.Params.DateForm .Date }}
-                 <br />
-                 {{ partial "categories.html" . }}
-                 <br />
-                 {{ partial "tags.html" . }}
-               </span>
-             </div>
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           <div class="site-heading">
+             <h1>{{ .Site.Title }}</h1>
+             <hr class="small">
+             {{ if isset .Site.Params "Description" }}<span class="subheading">{{ .Site.Params.Description }}</span>{{ end }}
            </div>
-        </div>
-      </div>
+         </div>
+       </div>
+     </div>
     </header>
 
     <!-- Post Content -->
     <article>
         <div class="container">
-            <div class="row">
+            <div class="row __inner_post">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+               <div class="post-preview">
+                 <p class="post-meta">{{ dateFormat .Site.Params.DateForm .Date }}</p>
+                 <a href="{{ .Permalink }}">
+                      <h1 class="post-title" style="margin-top: 10px">{{ .Title }}</h2>
+                 </a>
+                  <p class="post-meta">Posted by <a href="https://github.com/{{ .Params.author }}">{{ .Params.author }}</a></p>
+                  <p class="post-meta">{{ partial "categories.html" .}}</p>
+                  <p class="post-meta">{{ partial "tags.html" .}}</p>
+                </div>
+                <hr>
+
                   {{ .Content }}
                 </div>
             </div>
