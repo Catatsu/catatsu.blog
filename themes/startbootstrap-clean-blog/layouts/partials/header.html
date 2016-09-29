@@ -9,8 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    {{/* TOPの場合はDescriptionをサブタイトルにする */}}
+    {{ if eq .Site.Title .Title}}
+    <title>{{ .Title }} -- {{ .Site.Params.Description }}</title>
+    {{ else }}
+    <title>{{ .Title }} -- {{ .Site.Title }}</title>
+    {{ end }}
 
-    <title>{{ if eq .Site.Title .Title}} {{ .Site.Title }} {{else}} {{ .Title }} -- {{ .Site.Title }} {{end}}</title>
 
     {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
