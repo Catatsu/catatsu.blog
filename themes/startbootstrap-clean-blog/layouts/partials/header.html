@@ -6,16 +6,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    {{/* TOPの場合はDescriptionをサブタイトルにする */}}
-    {{ if eq .Site.Title .Title}}
-    <title>{{ .Title }} -- {{ .Site.Params.Description }}</title>
+{{/* TOPの場合 */}}
+{{ if not .Slug}}
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta name="author" content="{{ .Site.Author.name }}">
+    <title>{{ .Title }}</title>
+{{ else }}
+    {{/* 記事にdescriptionが設定されていれば設定 */}}
+    {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
     {{ else }}
-    <title>{{ .Title }} -- {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.Description }}">
     {{ end }}
 
+    {{/* 記事にauthorが設定されていれば設定 */}}
+    {{ if .Params.author }}
+    <meta name="author" content="{{ .Params.author }}">
+    {{ else }}
+    <meta name="author" content="{{ .Site.Author.name }}">
+    {{ end }}
+
+    {{/* 記事タイトル − ブログタイトル の形にする */}}
+    <title>{{ .Title }} -- {{ .Site.Title }}</title>
+{{ end }}
 
     {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />

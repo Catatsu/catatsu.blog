@@ -8,7 +8,7 @@ languageCode = "en-us"
 copyright = "Code released under the Apache 2.0 license."
 
 [author]
-  name = "Benoît Benedetti"
+  name = "Catatsu"
 
 [params]
   DateForm = "Mon, Jan 2, 2006"
