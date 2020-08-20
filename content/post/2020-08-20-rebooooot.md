@@ -16,4 +16,4 @@ CATATSU の！技術ブログが！！！
 
 Rebooooot！！！！
 
-([@nabeen](https://github.com/nabeen))の更新にご期待ください！
+([@nabeen](https://github.com/nabeen)の)更新にご期待ください！
